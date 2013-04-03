@@ -1,0 +1,13 @@
+Object clone do(
+	type := "Matrix"
+	get := method(x, y, ((self contents) at(x)) at(y))
+
+	dim := method(x, y, for(i, 0, x, 1, setSlot("inner", list) ;
+for(j, 0, y, 1, inner append("Uninitialized")) ;
+(self contents) append(inner)) ;
+return(self))
+
+	contents := list(list("Uninitialized", "Uninitialized", "Uninitialized", "Uninitialized");, list("Uninitialized", "lawl", "Uninitialized", "Uninitialized");, list("Uninitialized", "Uninitialized", 1337, "Uninitialized"););
+	set := method(x, y, value, ((self contents) at(x)) atPut(y, value))
+
+)
