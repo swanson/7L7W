@@ -13,7 +13,7 @@ true and 0
 
 true and ""
 // => true
-
+io
 true and nil
 // => false
 
