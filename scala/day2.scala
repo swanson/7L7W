@@ -26,4 +26,4 @@ class Television(val station:String) {
 var pbs = new Television("PBS") with Censor;
 println(pbs.display("It's Downton Abbey!"))
 println(pbs.display("fuck this shit"))
-println(pbs.display("damn this show is stupid as hell"))
+println(pbs.display("Damn this show is stupid as hell"))
